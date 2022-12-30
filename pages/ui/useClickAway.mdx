@@ -1,0 +1,62 @@
+# `useClickAway`
+
+React UI hook that triggers a callback when user
+clicks outside the target element.
+
+
+## Usage
+
+```jsx
+import {useClickAway} from 'react-use';
+
+const Demo = () => {
+  const ref = useRef(null);
+  useClickAway(ref, () => {
+    console.log('OUTSIDE CLICKED');
+  });
+
+  return (
+    <div ref={ref} style={{
+      width: 200,
+      height: 200,
+      background: 'red',
+    }} />
+  );
+};
+```
+
+## Component
+
+import { useRef, useState } from 'react'
+import {useClickAway} from 'react-use';
+
+
+export const Demo = () => {
+  const [msg, setMsg] = useState('')  
+  const ref = useRef(null);
+  useClickAway(ref, () => {
+    console.log('OUTSIDE CLICKED');
+    setMsg('OUTSIDE CLICKED')
+  });
+
+  return (
+    <>
+        <div ref={ref} style={{
+        width: 200,
+        height: 200,
+        background: 'red',
+        }} />
+        <div>{msg}</div>
+    </>
+  );
+};
+
+<Demo/>
+
+## Reference
+
+```js
+useClickAway(ref, onMouseEvent)
+useClickAway(ref, onMouseEvent, ['click'])
+useClickAway(ref, onMouseEvent, ['mousedown', 'touchstart'])
+```
