@@ -1,4 +1,8 @@
-# Nextra Docs Template 
+# react-use
+
+streamich / [react-use](https://github.com/streamich/react-use)
+
+## Nextra Docs Template 
 
 This is a template for creating documentation with [Nextra](https://nextra.site).
 

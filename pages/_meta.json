@@ -1,5 +1,6 @@
 {
   "index": "Introduction",
+  "sensors": "Sensors",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
   "about": {
@@ -7,9 +8,9 @@
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "NPM ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://www.npmjs.com/package/react-use",
     "newWindow": true
   }
 }
